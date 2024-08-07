@@ -1,2 +1,7 @@
 test
 src
+.prettierrc
+rollup.config.js
+node_modules
+tsconfig.json
+vitest.config.js
