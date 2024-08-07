@@ -27,15 +27,17 @@ import { defineConfig } from 'vite';
 import momentTimezonePlugin from 'vite-plugin-moment-timezone';
 
 export default defineConfig({
-  plugins: [momentTimezonePlugin({ zones: ['America/Los_Angeles'] })],
+  plugins: [
+    momentTimezonePlugin({ zones: ['America/Los_Angeles'], startYear: 2000, endYear: 2020 }),
+  ],
 });
 ```
 
 #### Plugin options
 
-There are four available options to filter the time zone data. **At least one option** must be provided.
-
-- `zones` _(integer[])_ — Only include data for time zones with names matching this value.
+- `zones` _(string[])_ — Only include data for time zones with names matching this value. THis can be left undefined if you want to include all time zones.
+- `startYear` _(integer)_ — Only include data starting from this year. This can be left undefined if you want to include all times.
+- `endYear` _(integer)_ — Only include data ending at this year. This can be left undefined if you want to include all times.
 
 ### Version support
 

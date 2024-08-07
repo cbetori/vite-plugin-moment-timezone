@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-moment-timezone",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Remove unneeded data from moment-timezone in a vite/rollup build",
   "type": "module",
   "main": "dist/cjs/index.cjs",
